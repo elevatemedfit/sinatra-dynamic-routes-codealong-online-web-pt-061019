@@ -20,10 +20,8 @@ get "/goodbye/:name" do
 end
 
 get "/multiply/:num1/:num2" do
-  @multiply = params[:multiply]
   @num_one = params[:num1].to_i
   @num_two = params[:num2].to_i
-  @result = num_one * num_two
-  "#{@result}"
+  "#{@num_one * @num_two}"
 end
 end
