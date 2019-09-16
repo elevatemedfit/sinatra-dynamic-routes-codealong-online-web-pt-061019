@@ -24,5 +24,6 @@ get "/multiply/:num1/:num2" do
   num_two = params[:num2]
   @result = num_one * num_two
   "#{@result}"
+  binding.pry
 end
 end
